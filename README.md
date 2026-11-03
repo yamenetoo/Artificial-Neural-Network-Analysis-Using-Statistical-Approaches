@@ -47,6 +47,8 @@ Sequential OBS ends at the same head as least-squares compensation of its kept s
 ## Colab
 `notebooks/annstat_colab.ipynb` installs the package, runs the tests, a quick Iris audit, the **CIFAR-10 experiment (E9)** on a GPU, the formal significance tests (E10: Friedman, Nemenyi, Wilcoxon-Holm via `annstat.compare`), generates the LaTeX tables and zips the results. Edit `REPO_URL`/`BRANCH` in the first cell if the repository is moved.
 
+**GPU experiment suite.** `notebooks/annstat_gpu_experiments.ipynb` (or `experiments/gpu_suite.py` with `ANNSTAT_PRESET=quick|full`) runs, on one GPU and with results saved to Google Drive after every experiment: E1/E1b (interval coverage and the exact CLT-of-replicates law), E2 (retraining-bootstrap schemes), E3 (multiplicity with correlated neurons), E5 (effective rank and ablation tests vs width and depth), E6/E6b (compression baselines on MNIST, Fashion-MNIST, CIFAR-10 and tabular data, with the error-bound check) and E7 (Friedman, Nemenyi, Wilcoxon-Holm). Finished experiments are skipped on re-run.
+
 `annstat.compare` (v0.2.0): `friedman_test`, `nemenyi_cd`, `pairwise_wilcoxon`, `paired_seed_tests`, `compare_methods`.
 
 

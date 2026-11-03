@@ -1,0 +1,1017 @@
+{
+ "iris": {
+  "n_test": 30,
+  "width": 10,
+  "accuracy": 0.9666666666666667,
+  "wilson": [
+   0.8332960900859082,
+   0.9940914096183874
+  ],
+  "boot": [
+   0.9,
+   1.0
+  ],
+  "effective_rank": 2.0191839509902008,
+  "n_corr_pairs": 4,
+  "sep_sig": 10,
+  "abl_sig": 3,
+  "abl_table": [
+   {
+    "neuron": 0,
+    "loss_increase": 0.0557,
+    "ci_low": -0.0234,
+    "ci_high": 0.1395,
+    "p_value": 0.0789,
+    "accuracy_drop": 0.0333,
+    "p_adj": 0.0987,
+    "significant": false
+   },
+   {
+    "neuron": 1,
+    "loss_increase": 0.0322,
+    "ci_low": -0.0221,
+    "ci_high": 0.0871,
+    "p_value": 0.1139,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.1265,
+    "significant": false
+   },
+   {
+    "neuron": 2,
+    "loss_increase": 0.0031,
+    "ci_low": 0.0012,
+    "ci_high": 0.0055,
+    "p_value": 0.001,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.005,
+    "significant": false
+   },
+   {
+    "neuron": 3,
+    "loss_increase": 0.0001,
+    "ci_low": 0.0,
+    "ci_high": 0.0003,
+    "p_value": 0.001,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.005,
+    "significant": false
+   },
+   {
+    "neuron": 4,
+    "loss_increase": 0.0122,
+    "ci_low": 0.0013,
+    "ci_high": 0.0239,
+    "p_value": 0.016,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.0266,
+    "significant": true
+   },
+   {
+    "neuron": 5,
+    "loss_increase": 0.2292,
+    "ci_low": 0.064,
+    "ci_high": 0.4313,
+    "p_value": 0.003,
+    "accuracy_drop": 0.1,
+    "p_adj": 0.0075,
+    "significant": true
+   },
+   {
+    "neuron": 6,
+    "loss_increase": 0.1999,
+    "ci_low": 0.0604,
+    "ci_high": 0.3421,
+    "p_value": 0.006,
+    "accuracy_drop": 0.1333,
+    "p_adj": 0.012,
+    "significant": true
+   },
+   {
+    "neuron": 7,
+    "loss_increase": 0.0114,
+    "ci_low": -0.0058,
+    "ci_high": 0.0347,
+    "p_value": 0.1329,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.1329,
+    "significant": false
+   },
+   {
+    "neuron": 8,
+    "loss_increase": 0.0316,
+    "ci_low": -0.0138,
+    "ci_high": 0.0721,
+    "p_value": 0.0779,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.0987,
+    "significant": false
+   },
+   {
+    "neuron": 9,
+    "loss_increase": 0.0054,
+    "ci_low": 0.0016,
+    "ci_high": 0.0097,
+    "p_value": 0.003,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.0075,
+    "significant": false
+   }
+  ],
+  "n_pairs": 30,
+  "mwu_raw": 18,
+  "mwu_holm": 16,
+  "wil_raw": 30,
+  "wil_holm": 30,
+  "surrogate": {
+   "n": 120,
+   "loglik": -2.7654042847534583,
+   "mcfadden_r2": 0.979023504521129,
+   "aic": 49.53080856950692,
+   "bic": 110.85562691071192,
+   "lr_test": {
+    "statistic": 258.1361407108394,
+    "df": 20,
+    "p_value": 2.601240701910013e-43
+   },
+   "converged": true,
+   "separation_warning": true
+  },
+  "surrogate_fidelity": {
+   "agreement": 0.9333333333333333,
+   "surrogate_accuracy": 0.9,
+   "network_accuracy": 0.9666666666666667
+  },
+  "surrogate_sig_coef_raw": 0,
+  "surrogate_n_coef": 20,
+  "drop_one_lr_sig": 0,
+  "drop_one_lr_n": 10,
+  "inputs": [
+   {
+    "feature": "sepal length (cm)",
+    "loss_increase": 0.0297,
+    "p_value": 0.005,
+    "p_adj": 0.005,
+    "significant": true
+   },
+   {
+    "feature": "sepal width (cm)",
+    "loss_increase": 0.1486,
+    "p_value": 0.005,
+    "p_adj": 0.005,
+    "significant": true
+   },
+   {
+    "feature": "petal length (cm)",
+    "loss_increase": 0.4258,
+    "p_value": 0.005,
+    "p_adj": 0.005,
+    "significant": true
+   },
+   {
+    "feature": "petal width (cm)",
+    "loss_increase": 0.6561,
+    "p_value": 0.005,
+    "p_adj": 0.005,
+    "significant": true
+   }
+  ],
+  "reduction": [
+   {
+    "method": "full",
+    "k": 10,
+    "k_requested": 10,
+    "metric": 0.9667,
+    "agreement": 1.0,
+    "n_neurons_needed": 10,
+    "n_head_params": 33,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "lsc_qr",
+    "k": 2,
+    "k_requested": 2,
+    "metric": 0.7667,
+    "agreement": 0.8,
+    "n_neurons_needed": 2,
+    "n_head_params": 9,
+    "n_hidden_layer_params_removed": 8
+   },
+   {
+    "method": "lsc_importance",
+    "k": 2,
+    "k_requested": 2,
+    "metric": 0.8333,
+    "agreement": 0.8667,
+    "n_neurons_needed": 2,
+    "n_head_params": 9,
+    "n_hidden_layer_params_removed": 8
+   },
+   {
+    "method": "cluster_mean",
+    "k": 2,
+    "k_requested": 2,
+    "metric": 0.9,
+    "agreement": 0.9333,
+    "n_neurons_needed": 10,
+    "n_head_params": 9,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "pca",
+    "k": 2,
+    "k_requested": 2,
+    "metric": 0.9,
+    "agreement": 0.9333,
+    "n_neurons_needed": 10,
+    "n_head_params": 9,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "lsc_qr",
+    "k": 3,
+    "k_requested": 3,
+    "metric": 0.7667,
+    "agreement": 0.8,
+    "n_neurons_needed": 3,
+    "n_head_params": 12,
+    "n_hidden_layer_params_removed": 7
+   },
+   {
+    "method": "lsc_importance",
+    "k": 3,
+    "k_requested": 3,
+    "metric": 0.9333,
+    "agreement": 0.9667,
+    "n_neurons_needed": 3,
+    "n_head_params": 12,
+    "n_hidden_layer_params_removed": 7
+   },
+   {
+    "method": "cluster_mean",
+    "k": 3,
+    "k_requested": 3,
+    "metric": 0.9,
+    "agreement": 0.9333,
+    "n_neurons_needed": 10,
+    "n_head_params": 12,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "pca",
+    "k": 3,
+    "k_requested": 3,
+    "metric": 0.9333,
+    "agreement": 0.9667,
+    "n_neurons_needed": 10,
+    "n_head_params": 12,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "lsc_qr",
+    "k": 4,
+    "k_requested": 4,
+    "metric": 0.9667,
+    "agreement": 1.0,
+    "n_neurons_needed": 4,
+    "n_head_params": 15,
+    "n_hidden_layer_params_removed": 6
+   },
+   {
+    "method": "lsc_importance",
+    "k": 4,
+    "k_requested": 4,
+    "metric": 0.9667,
+    "agreement": 1.0,
+    "n_neurons_needed": 4,
+    "n_head_params": 15,
+    "n_hidden_layer_params_removed": 6
+   },
+   {
+    "method": "cluster_mean",
+    "k": 4,
+    "k_requested": 4,
+    "metric": 0.9667,
+    "agreement": 1.0,
+    "n_neurons_needed": 10,
+    "n_head_params": 15,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "pca",
+    "k": 4,
+    "k_requested": 4,
+    "metric": 0.9333,
+    "agreement": 0.9667,
+    "n_neurons_needed": 10,
+    "n_head_params": 15,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "lsc_qr",
+    "k": 6,
+    "k_requested": 6,
+    "metric": 0.9667,
+    "agreement": 1.0,
+    "n_neurons_needed": 6,
+    "n_head_params": 21,
+    "n_hidden_layer_params_removed": 4
+   },
+   {
+    "method": "lsc_importance",
+    "k": 6,
+    "k_requested": 6,
+    "metric": 0.9667,
+    "agreement": 1.0,
+    "n_neurons_needed": 6,
+    "n_head_params": 21,
+    "n_hidden_layer_params_removed": 4
+   },
+   {
+    "method": "cluster_mean",
+    "k": 6,
+    "k_requested": 6,
+    "metric": 0.9667,
+    "agreement": 1.0,
+    "n_neurons_needed": 10,
+    "n_head_params": 21,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "pca",
+    "k": 6,
+    "k_requested": 6,
+    "metric": 0.9333,
+    "agreement": 0.9667,
+    "n_neurons_needed": 10,
+    "n_head_params": 21,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "lsc_qr",
+    "k": 8,
+    "k_requested": 8,
+    "metric": 0.9667,
+    "agreement": 1.0,
+    "n_neurons_needed": 8,
+    "n_head_params": 27,
+    "n_hidden_layer_params_removed": 2
+   },
+   {
+    "method": "lsc_importance",
+    "k": 8,
+    "k_requested": 8,
+    "metric": 0.9667,
+    "agreement": 1.0,
+    "n_neurons_needed": 8,
+    "n_head_params": 27,
+    "n_hidden_layer_params_removed": 2
+   },
+   {
+    "method": "cluster_mean",
+    "k": 8,
+    "k_requested": 8,
+    "metric": 0.9667,
+    "agreement": 1.0,
+    "n_neurons_needed": 10,
+    "n_head_params": 27,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "pca",
+    "k": 8,
+    "k_requested": 8,
+    "metric": 0.9667,
+    "agreement": 1.0,
+    "n_neurons_needed": 10,
+    "n_head_params": 27,
+    "n_hidden_layer_params_removed": 0
+   }
+  ]
+ },
+ "breast_cancer": {
+  "n_test": 171,
+  "width": 16,
+  "accuracy": 0.9707602339181286,
+  "wilson": [
+   0.933387031749114,
+   0.9874471976490231
+  ],
+  "boot": [
+   0.9473684210526315,
+   0.9941520467836257
+  ],
+  "effective_rank": 2.4979652908407397,
+  "n_corr_pairs": 3,
+  "sep_sig": 16,
+  "abl_sig": 4,
+  "abl_table": [
+   {
+    "neuron": 0,
+    "loss_increase": 0.0,
+    "ci_low": -0.0,
+    "ci_high": 0.0001,
+    "p_value": 0.1868,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.4176,
+    "significant": false
+   },
+   {
+    "neuron": 1,
+    "loss_increase": 0.0027,
+    "ci_low": -0.0031,
+    "ci_high": 0.0092,
+    "p_value": 0.2088,
+    "accuracy_drop": -0.0058,
+    "p_adj": 0.4176,
+    "significant": false
+   },
+   {
+    "neuron": 2,
+    "loss_increase": 0.0032,
+    "ci_low": -0.0029,
+    "ci_high": 0.0096,
+    "p_value": 0.1698,
+    "accuracy_drop": -0.0058,
+    "p_adj": 0.4176,
+    "significant": false
+   },
+   {
+    "neuron": 3,
+    "loss_increase": 0.0134,
+    "ci_low": 0.0061,
+    "ci_high": 0.0216,
+    "p_value": 0.001,
+    "accuracy_drop": 0.0058,
+    "p_adj": 0.008,
+    "significant": true
+   },
+   {
+    "neuron": 4,
+    "loss_increase": 0.0001,
+    "ci_low": -0.004,
+    "ci_high": 0.0032,
+    "p_value": 0.4456,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.7921,
+    "significant": false
+   },
+   {
+    "neuron": 5,
+    "loss_increase": -0.0003,
+    "ci_low": -0.0013,
+    "ci_high": 0.0008,
+    "p_value": 0.7562,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.9545,
+    "significant": false
+   },
+   {
+    "neuron": 6,
+    "loss_increase": 0.0158,
+    "ci_low": 0.0086,
+    "ci_high": 0.0229,
+    "p_value": 0.001,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.008,
+    "significant": true
+   },
+   {
+    "neuron": 7,
+    "loss_increase": 0.0127,
+    "ci_low": 0.0036,
+    "ci_high": 0.0204,
+    "p_value": 0.008,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.0256,
+    "significant": true
+   },
+   {
+    "neuron": 8,
+    "loss_increase": -0.0016,
+    "ci_low": -0.0092,
+    "ci_high": 0.0055,
+    "p_value": 0.6743,
+    "accuracy_drop": -0.0117,
+    "p_adj": 0.9545,
+    "significant": false
+   },
+   {
+    "neuron": 9,
+    "loss_increase": 0.0163,
+    "ci_low": 0.0034,
+    "ci_high": 0.0264,
+    "p_value": 0.004,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.0213,
+    "significant": true
+   },
+   {
+    "neuron": 10,
+    "loss_increase": 0.0068,
+    "ci_low": 0.002,
+    "ci_high": 0.0117,
+    "p_value": 0.006,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.024,
+    "significant": false
+   },
+   {
+    "neuron": 11,
+    "loss_increase": -0.0024,
+    "ci_low": -0.0081,
+    "ci_high": 0.0012,
+    "p_value": 0.8352,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.9545,
+    "significant": false
+   },
+   {
+    "neuron": 12,
+    "loss_increase": -0.0017,
+    "ci_low": -0.0044,
+    "ci_high": 0.0002,
+    "p_value": 0.957,
+    "accuracy_drop": 0.0,
+    "p_adj": 0.981,
+    "significant": false
+   },
+   {
+    "neuron": 13,
+    "loss_increase": -0.0027,
+    "ci_low": -0.0142,
+    "ci_high": 0.007,
+    "p_value": 0.6873,
+    "accuracy_drop": -0.0117,
+    "p_adj": 0.9545,
+    "significant": false
+   },
+   {
+    "neuron": 14,
+    "loss_increase": -0.0014,
+    "ci_low": -0.0055,
+    "ci_high": 0.0016,
+    "p_value": 0.8092,
+    "accuracy_drop": -0.0058,
+    "p_adj": 0.9545,
+    "significant": false
+   },
+   {
+    "neuron": 15,
+    "loss_increase": -0.0022,
+    "ci_low": -0.0047,
+    "ci_high": -0.0001,
+    "p_value": 0.981,
+    "accuracy_drop": -0.0058,
+    "p_adj": 0.981,
+    "significant": false
+   }
+  ],
+  "surrogate": {
+   "n": 398,
+   "loglik": -6.899756033099038,
+   "mcfadden_r2": 0.9737307517082044,
+   "aic": 47.799512066198076,
+   "bic": 115.56919615603351,
+   "lr_test": {
+    "statistic": 511.5109921749131,
+    "df": 16,
+    "p_value": 1.2335228212630957e-98
+   },
+   "converged": true,
+   "separation_warning": false
+  },
+  "surrogate_fidelity": {
+   "agreement": 0.9707602339181286,
+   "surrogate_accuracy": 0.9532163742690059,
+   "network_accuracy": 0.9707602339181286
+  },
+  "surrogate_sig_coef_raw": 0,
+  "surrogate_n_coef": 16,
+  "drop_one_lr_sig": 1,
+  "drop_one_lr_n": 16,
+  "inputs": [
+   {
+    "feature": "mean radius",
+    "loss_increase": 0.0118,
+    "p_value": 0.1542,
+    "p_adj": 0.2722,
+    "significant": false
+   },
+   {
+    "feature": "mean texture",
+    "loss_increase": 0.0122,
+    "p_value": 0.0498,
+    "p_adj": 0.1628,
+    "significant": false
+   },
+   {
+    "feature": "mean perimeter",
+    "loss_increase": 0.0026,
+    "p_value": 0.3085,
+    "p_adj": 0.3701,
+    "significant": false
+   },
+   {
+    "feature": "mean area",
+    "loss_increase": 0.0223,
+    "p_value": 0.0398,
+    "p_adj": 0.1628,
+    "significant": false
+   },
+   {
+    "feature": "mean smoothness",
+    "loss_increase": 0.0056,
+    "p_value": 0.1194,
+    "p_adj": 0.2559,
+    "significant": false
+   },
+   {
+    "feature": "mean compactness",
+    "loss_increase": -0.0001,
+    "p_value": 0.5274,
+    "p_adj": 0.565,
+    "significant": false
+   },
+   {
+    "feature": "mean concavity",
+    "loss_increase": 0.0125,
+    "p_value": 0.0448,
+    "p_adj": 0.1628,
+    "significant": false
+   },
+   {
+    "feature": "mean concave points",
+    "loss_increase": 0.015,
+    "p_value": 0.0597,
+    "p_adj": 0.1628,
+    "significant": false
+   },
+   {
+    "feature": "mean symmetry",
+    "loss_increase": 0.002,
+    "p_value": 0.3234,
+    "p_adj": 0.3731,
+    "significant": false
+   },
+   {
+    "feature": "mean fractal dimension",
+    "loss_increase": 0.0086,
+    "p_value": 0.1343,
+    "p_adj": 0.2687,
+    "significant": false
+   },
+   {
+    "feature": "radius error",
+    "loss_increase": 0.0652,
+    "p_value": 0.005,
+    "p_adj": 0.0498,
+    "significant": true
+   },
+   {
+    "feature": "texture error",
+    "loss_increase": 0.0019,
+    "p_value": 0.3582,
+    "p_adj": 0.398,
+    "significant": false
+   },
+   {
+    "feature": "perimeter error",
+    "loss_increase": 0.025,
+    "p_value": 0.01,
+    "p_adj": 0.0597,
+    "significant": false
+   },
+   {
+    "feature": "area error",
+    "loss_increase": 0.1434,
+    "p_value": 0.005,
+    "p_adj": 0.0498,
+    "significant": true
+   },
+   {
+    "feature": "smoothness error",
+    "loss_increase": -0.0009,
+    "p_value": 0.7413,
+    "p_adj": 0.7669,
+    "significant": false
+   },
+   {
+    "feature": "compactness error",
+    "loss_increase": 0.0031,
+    "p_value": 0.2836,
+    "p_adj": 0.3669,
+    "significant": false
+   },
+   {
+    "feature": "concavity error",
+    "loss_increase": 0.0014,
+    "p_value": 0.0547,
+    "p_adj": 0.1628,
+    "significant": false
+   },
+   {
+    "feature": "concave points error",
+    "loss_increase": 0.0019,
+    "p_value": 0.1542,
+    "p_adj": 0.2722,
+    "significant": false
+   },
+   {
+    "feature": "symmetry error",
+    "loss_increase": 0.0025,
+    "p_value": 0.2687,
+    "p_adj": 0.3669,
+    "significant": false
+   },
+   {
+    "feature": "fractal dimension error",
+    "loss_increase": 0.0031,
+    "p_value": 0.2736,
+    "p_adj": 0.3669,
+    "significant": false
+   },
+   {
+    "feature": "worst radius",
+    "loss_increase": 0.015,
+    "p_value": 0.0846,
+    "p_adj": 0.2114,
+    "significant": false
+   },
+   {
+    "feature": "worst texture",
+    "loss_increase": 0.0635,
+    "p_value": 0.005,
+    "p_adj": 0.0498,
+    "significant": true
+   },
+   {
+    "feature": "worst perimeter",
+    "loss_increase": 0.0034,
+    "p_value": 0.204,
+    "p_adj": 0.34,
+    "significant": false
+   },
+   {
+    "feature": "worst area",
+    "loss_increase": 0.0387,
+    "p_value": 0.0199,
+    "p_adj": 0.0995,
+    "significant": false
+   },
+   {
+    "feature": "worst smoothness",
+    "loss_increase": 0.0277,
+    "p_value": 0.01,
+    "p_adj": 0.0597,
+    "significant": false
+   },
+   {
+    "feature": "worst compactness",
+    "loss_increase": 0.0034,
+    "p_value": 0.2637,
+    "p_adj": 0.3669,
+    "significant": false
+   },
+   {
+    "feature": "worst concavity",
+    "loss_increase": 0.008,
+    "p_value": 0.0945,
+    "p_adj": 0.2181,
+    "significant": false
+   },
+   {
+    "feature": "worst concave points",
+    "loss_increase": 0.0043,
+    "p_value": 0.2587,
+    "p_adj": 0.3669,
+    "significant": false
+   },
+   {
+    "feature": "worst symmetry",
+    "loss_increase": 0.0053,
+    "p_value": 0.2935,
+    "p_adj": 0.3669,
+    "significant": false
+   },
+   {
+    "feature": "worst fractal dimension",
+    "loss_increase": -0.0014,
+    "p_value": 0.7861,
+    "p_adj": 0.7861,
+    "significant": false
+   }
+  ],
+  "reduction": [
+   {
+    "method": "full",
+    "k": 16,
+    "k_requested": 16,
+    "metric": 0.9708,
+    "agreement": 1.0,
+    "n_neurons_needed": 16,
+    "n_head_params": 34,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "lsc_qr",
+    "k": 2,
+    "k_requested": 2,
+    "metric": 0.9532,
+    "agreement": 0.9708,
+    "n_neurons_needed": 2,
+    "n_head_params": 6,
+    "n_hidden_layer_params_removed": 14
+   },
+   {
+    "method": "lsc_importance",
+    "k": 2,
+    "k_requested": 2,
+    "metric": 0.9474,
+    "agreement": 0.9649,
+    "n_neurons_needed": 2,
+    "n_head_params": 6,
+    "n_hidden_layer_params_removed": 14
+   },
+   {
+    "method": "cluster_mean",
+    "k": 2,
+    "k_requested": 2,
+    "metric": 0.9766,
+    "agreement": 0.9942,
+    "n_neurons_needed": 16,
+    "n_head_params": 6,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "pca",
+    "k": 2,
+    "k_requested": 2,
+    "metric": 0.9766,
+    "agreement": 0.9942,
+    "n_neurons_needed": 16,
+    "n_head_params": 6,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "lsc_qr",
+    "k": 3,
+    "k_requested": 3,
+    "metric": 0.9825,
+    "agreement": 0.9766,
+    "n_neurons_needed": 3,
+    "n_head_params": 8,
+    "n_hidden_layer_params_removed": 13
+   },
+   {
+    "method": "lsc_importance",
+    "k": 3,
+    "k_requested": 3,
+    "metric": 0.9532,
+    "agreement": 0.9825,
+    "n_neurons_needed": 3,
+    "n_head_params": 8,
+    "n_hidden_layer_params_removed": 13
+   },
+   {
+    "method": "cluster_mean",
+    "k": 3,
+    "k_requested": 3,
+    "metric": 0.9766,
+    "agreement": 0.9942,
+    "n_neurons_needed": 16,
+    "n_head_params": 8,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "pca",
+    "k": 3,
+    "k_requested": 3,
+    "metric": 0.9766,
+    "agreement": 0.9942,
+    "n_neurons_needed": 16,
+    "n_head_params": 8,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "lsc_qr",
+    "k": 4,
+    "k_requested": 4,
+    "metric": 0.9708,
+    "agreement": 1.0,
+    "n_neurons_needed": 4,
+    "n_head_params": 10,
+    "n_hidden_layer_params_removed": 12
+   },
+   {
+    "method": "lsc_importance",
+    "k": 4,
+    "k_requested": 4,
+    "metric": 0.9474,
+    "agreement": 0.9766,
+    "n_neurons_needed": 4,
+    "n_head_params": 10,
+    "n_hidden_layer_params_removed": 12
+   },
+   {
+    "method": "cluster_mean",
+    "k": 4,
+    "k_requested": 4,
+    "metric": 0.9766,
+    "agreement": 0.9942,
+    "n_neurons_needed": 16,
+    "n_head_params": 10,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "pca",
+    "k": 4,
+    "k_requested": 4,
+    "metric": 0.9591,
+    "agreement": 0.9883,
+    "n_neurons_needed": 16,
+    "n_head_params": 10,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "lsc_qr",
+    "k": 6,
+    "k_requested": 6,
+    "metric": 0.9708,
+    "agreement": 1.0,
+    "n_neurons_needed": 6,
+    "n_head_params": 14,
+    "n_hidden_layer_params_removed": 10
+   },
+   {
+    "method": "lsc_importance",
+    "k": 6,
+    "k_requested": 6,
+    "metric": 0.9591,
+    "agreement": 0.9883,
+    "n_neurons_needed": 6,
+    "n_head_params": 14,
+    "n_hidden_layer_params_removed": 10
+   },
+   {
+    "method": "cluster_mean",
+    "k": 6,
+    "k_requested": 6,
+    "metric": 0.9766,
+    "agreement": 0.9825,
+    "n_neurons_needed": 16,
+    "n_head_params": 14,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "pca",
+    "k": 6,
+    "k_requested": 6,
+    "metric": 0.9532,
+    "agreement": 0.9825,
+    "n_neurons_needed": 16,
+    "n_head_params": 14,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "lsc_qr",
+    "k": 8,
+    "k_requested": 8,
+    "metric": 0.9708,
+    "agreement": 1.0,
+    "n_neurons_needed": 8,
+    "n_head_params": 18,
+    "n_hidden_layer_params_removed": 8
+   },
+   {
+    "method": "lsc_importance",
+    "k": 8,
+    "k_requested": 8,
+    "metric": 0.9708,
+    "agreement": 1.0,
+    "n_neurons_needed": 8,
+    "n_head_params": 18,
+    "n_hidden_layer_params_removed": 8
+   },
+   {
+    "method": "cluster_mean",
+    "k": 8,
+    "k_requested": 8,
+    "metric": 0.9649,
+    "agreement": 0.9825,
+    "n_neurons_needed": 16,
+    "n_head_params": 18,
+    "n_hidden_layer_params_removed": 0
+   },
+   {
+    "method": "pca",
+    "k": 8,
+    "k_requested": 8,
+    "metric": 0.9474,
+    "agreement": 0.9766,
+    "n_neurons_needed": 16,
+    "n_head_params": 18,
+    "n_hidden_layer_params_removed": 0
+   }
+  ]
+ }
+}

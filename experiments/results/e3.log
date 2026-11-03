@@ -1,0 +1,6 @@
+     n  P(any false positive) raw  ...  power raw  power BH
+0   60                      0.860  ...      0.766     0.380
+1  150                      0.835  ...      0.993     0.968
+2  300                      0.890  ...      1.000     1.000
+
+[3 rows x 7 columns]

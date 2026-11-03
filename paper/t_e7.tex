@@ -1,0 +1,15 @@
+\begin{tabular}{lrrrr}\toprule
+ & \multicolumn{2}{c}{deep MLP ($k{=}64$)} & \multicolumn{2}{c}{CNN ($k{=}128$)}\\
+Method & 50\% width & 25\% width & 50\% width & 25\% width\\\midrule
+LSC-QR (label-free) & +0.0 $\pm$ 0.1 & -0.0 $\pm$ 0.1 & +0.0 $\pm$ 0.1 & -0.4 $\pm$ 0.1\\
+OBS-greedy \cite{hassibi1993,dong2017} & \textbf{+0.0 $\pm$ 0.1} & \textbf{+0.0 $\pm$ 0.1} & \textbf{+0.0 $\pm$ 0.1} & \textbf{-0.3 $\pm$ 0.1}\\
+ThiNet \cite{luo2017} & -0.2 $\pm$ 0.3 & -3.8 $\pm$ 1.6 & -0.2 $\pm$ 0.3 & -2.1 $\pm$ 0.8\\
+Neuron merging, data-free \cite{srinivas2015,kim2020} & -0.5 $\pm$ 0.4 & -4.3 $\pm$ 3.5 & -0.3 $\pm$ 0.2 & -3.5 $\pm$ 1.3\\
+CUR leverage + LSC \cite{mahoney2009} & +0.0 $\pm$ 0.2 & -0.2 $\pm$ 0.5 & \textbf{+0.0 $\pm$ 0.1} & -0.9 $\pm$ 0.4\\
+random subset + LSC & -0.0 $\pm$ 0.2 & -0.6 $\pm$ 0.7 & -0.4 $\pm$ 0.2 & -2.0 $\pm$ 1.0\\
+weight-norm pruning \cite{han2015} & -2.3 $\pm$ 1.5 & -10.9 $\pm$ 3.2 & -1.3 $\pm$ 1.0 & -17.3 $\pm$ 7.8\\
+cluster-mean$^\dagger$ & -0.1 $\pm$ 0.2 & -0.4 $\pm$ 0.3 & -0.2 $\pm$ 0.3 & -0.6 $\pm$ 0.5\\
+PCA$^\dagger$ & -0.0 $\pm$ 0.3 & -0.0 $\pm$ 0.3 & +0.1 $\pm$ 0.3 & +0.0 $\pm$ 0.3\\
+\midrule
+full network (test accuracy) & \multicolumn{2}{c}{0.943} & \multicolumn{2}{c}{0.969}\\
+\bottomrule\end{tabular}

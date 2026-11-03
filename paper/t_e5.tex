@@ -1,0 +1,15 @@
+\begin{tabular}{lrr}\toprule
+ & Iris ($k{=}10$) & Breast cancer ($k{=}16$)\\\midrule
+Test accuracy (Wilson 95\% CI) & 0.967 [0.833, 0.994] & 0.971 [0.933, 0.987]\\
+Bootstrap percentile 95\% CI & [0.900, 1.000] & [0.947, 0.994]\\
+Effective rank of hidden layer & 2.02 of 10 & 2.50 of 16\\
+Neurons associated with response (BH) & 10 / 10 & 16 / 16\\
+Neurons with significant ablation effect & 3 / 10 & 4 / 16\\
+Pairwise contrasts: Mann--Whitney raw / Holm & 18 / 16 of 30 & n/a (binary)\\
+Pairwise contrasts: Wilcoxon raw / Holm & 30 / 30 of 30 & n/a (binary)\\
+Surrogate McFadden $R^2$ & 0.979 & 0.974\\
+Surrogate LR test, whole layer ($p$) & 2.6e-43 & 1.2e-98\\
+Neurons significant, Wald ($p<.05$, raw) & 0 / 10 & 0 / 16\\
+Neurons significant, drop-one LR (BH) & 0 / 10 & 1 / 16\\
+Surrogate--network agreement (test) & 0.933 & 0.971\\
+\bottomrule\end{tabular}

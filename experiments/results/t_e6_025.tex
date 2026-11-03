@@ -1,0 +1,14 @@
+\begin{tabular}{lrrrrr}\toprule
+Method & iris & wine & breast cancer & digits & diabetes ($R^2$)\\\midrule
+LSC-QR (label-free) & -1.0 $\pm$ 3.4 & -2.3 $\pm$ 3.6 & \textbf{-0.3 $\pm$ 0.8} & -13.6 $\pm$ 3.9 & -2.3 $\pm$ 4.1\\
+OBS-greedy \cite{hassibi1993,dong2017} & \textbf{-0.4 $\pm$ 1.7} & \textbf{-2.0 $\pm$ 2.4} & -0.4 $\pm$ 0.8 & \textbf{-11.3 $\pm$ 1.9} & \textbf{-0.9 $\pm$ 2.6}\\
+ThiNet \cite{luo2017} & -13.5 $\pm$ 11.6 & -7.9 $\pm$ 9.5 & -1.5 $\pm$ 1.7 & -31.9 $\pm$ 5.5 & -20.4 $\pm$ 10.3\\
+Neuron merging, data-free \cite{srinivas2015,kim2020} & -16.4 $\pm$ 16.0 & -17.0 $\pm$ 12.4 & -4.7 $\pm$ 9.2 & -41.7 $\pm$ 6.3 & -79.8 $\pm$ 78.6\\
+CUR leverage + LSC \cite{mahoney2009} & -2.2 $\pm$ 3.9 & -4.7 $\pm$ 5.2 & -2.2 $\pm$ 4.0 & -16.5 $\pm$ 4.8 & -9.2 $\pm$ 6.7\\
+random subset + LSC & -12.3 $\pm$ 10.8 & -9.9 $\pm$ 8.9 & -2.1 $\pm$ 1.7 & -21.0 $\pm$ 5.1 & -5.5 $\pm$ 4.0\\
+weight-norm pruning \cite{han2015} & -29.5 $\pm$ 14.3 & -16.3 $\pm$ 11.6 & -3.7 $\pm$ 5.9 & -41.1 $\pm$ 5.0 & -257.9 $\pm$ 79.3\\
+cluster-mean$^\dagger$ & -0.1 $\pm$ 3.1 & -0.6 $\pm$ 1.5 & -0.3 $\pm$ 0.9 & -6.5 $\pm$ 2.1 & -0.1 $\pm$ 2.6\\
+PCA$^\dagger$ & -0.1 $\pm$ 1.8 & -0.6 $\pm$ 1.1 & +0.2 $\pm$ 0.8 & -3.3 $\pm$ 1.6 & -0.5 $\pm$ 3.1\\
+\midrule
+full network (metric) & 0.957 & 0.979 & 0.971 & 0.973 & 0.448\\
+\bottomrule\end{tabular}

@@ -1,0 +1,10 @@
+         dataset                      scheme    mean  ci_low  ci_high
+0           iris    own-sample (paper Alg.7)  0.9714  0.9238   1.0000
+1           iris                  out-of-bag  0.9480  0.8852   1.0000
+2           iris  hold-out accuracy (Wilson)  1.0000  0.9213   1.0000
+3           wine    own-sample (paper Alg.7)  1.0000  1.0000   1.0000
+4           wine                  out-of-bag  0.9897  0.9545   1.0000
+5           wine  hold-out accuracy (Wilson)  0.9815  0.9023   0.9967
+6  breast_cancer    own-sample (paper Alg.7)  0.9945  0.9824   1.0000
+7  breast_cancer                  out-of-bag  0.9891  0.9722   1.0000
+8  breast_cancer  hold-out accuracy (Wilson)  0.9532  0.9104   0.9761

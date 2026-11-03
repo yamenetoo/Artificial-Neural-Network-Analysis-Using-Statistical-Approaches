@@ -1,0 +1,13 @@
+dataset,scheme,mean,ci_low,ci_high
+iris,"own-sample, warm start (paper Alg.7)",0.9720000000000001,0.9333333333333333,1.0
+iris,"out-of-bag, warm start",0.9476137991919142,0.8813226744186047,1.0
+iris,"out-of-bag, cold start",0.931069744888866,0.8590277777777778,0.9750156347717324
+iris,hold-out accuracy (Wilson),1.0,0.9213484012671117,1.0
+wine,"own-sample, warm start (paper Alg.7)",1.0,1.0,1.0
+wine,"out-of-bag, warm start",0.9898701010358464,0.9545454545454546,1.0
+wine,"out-of-bag, cold start",0.958664753947773,0.910050505050505,1.0
+wine,hold-out accuracy (Wilson),0.9814814814814815,0.9022856251121808,0.9967235122817709
+breast_cancer,"own-sample, warm start (paper Alg.7)",0.9943718592964825,0.9824120603015075,1.0
+breast_cancer,"out-of-bag, warm start",0.9889200604676985,0.9721146322378716,1.0
+breast_cancer,"out-of-bag, cold start",0.9779867256357825,0.9469838498472283,1.0
+breast_cancer,hold-out accuracy (Wilson),0.9532163742690059,0.9104112726113938,0.9761061532066886

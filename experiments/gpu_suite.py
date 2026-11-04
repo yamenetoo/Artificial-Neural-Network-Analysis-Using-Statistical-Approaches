@@ -286,7 +286,9 @@ def exp_E6():
             fit = rng.choice(len(idx), min(P["E6_nfit"], len(idx)), replace=False)
             Xf, yf = Xtr[idx][fit].numpy(), ytr[idx][fit].numpy(); Xe, ye = Xte[:P["E6_ntest"]].numpy(), yte[:P["E6_ntest"]].numpy()
             inc = (lin.weight.detach().cpu().numpy().T.astype(float), lin.bias.detach().cpu().numpy().astype(float))
+            t1 = time.time()
             df = A.reduction_path(a, Xf, yf, Xe, ye, [k // 2, k // 4, k // 8], METHODS, incoming=inc, seed=seed)
+            print(f"     train+adapter {t1 - t0:.0f}s | reduction_path {time.time() - t1:.0f}s", flush=True)
             df["dataset"], df["seed"], df["width"] = f"{ds}_{'cnn' if ds == 'cifar10' else 'mlp3'}", seed, k; rows.append(df)
             H, He = a.hidden(Xf), a.hidden(Xe); W, b = a.head(); Z, Ze = H @ W + b, He @ W + b
             Hc = H - H.mean(0); _, Rq, _ = qr(Hc, pivoting=True, mode="economic")

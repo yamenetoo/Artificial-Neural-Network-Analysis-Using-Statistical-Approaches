@@ -36,11 +36,15 @@ def select_thinet(H, W, m):
     H = np.asarray(H, float)
     n, k = H.shape
     C = np.einsum("nk,kq->knq", H, W)          # (k, n, q) contributions to the logits
-    removed, acc = [], np.zeros_like(C[0])
+    Cf = C.reshape(k, -1)
+    sq = (Cf ** 2).sum(1)
+    removed, acc = [], np.zeros(Cf.shape[1])
     remaining = list(range(k))
     while len(remaining) > m:
-        best = min(remaining, key=lambda j: float(((acc + C[j]) ** 2).sum()))
-        removed.append(best); remaining.remove(best); acc = acc + C[best]
+        r = np.array(remaining)
+        energy = 2.0 * (Cf[r] @ acc) + sq[r]    # ||acc + C_j||^2 - ||acc||^2, vectorised over candidates
+        best = int(r[int(np.argmin(energy))])
+        removed.append(best); remaining.remove(best); acc = acc + Cf[best]
     keep = np.sort(np.array(remaining))
     Ck = C[keep].reshape(len(keep), -1)
     Z0 = C.sum(0).reshape(-1)

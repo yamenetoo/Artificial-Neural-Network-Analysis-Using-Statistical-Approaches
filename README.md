@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/logo.svg" alt="annstat" width="460"></p>
+
 # annstat — statistical tuning, inference and compression of trained neural networks
 
 [![Open GPU experiments in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yamenetoo/Artificial-Neural-Network-Analysis-Using-Statistical-Approaches/blob/annstat-package/notebooks/annstat_gpu_experiments.ipynb) **GPU experiment suite**

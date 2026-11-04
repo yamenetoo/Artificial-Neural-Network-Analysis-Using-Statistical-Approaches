@@ -1,5 +1,8 @@
 # annstat — statistical tuning, inference and compression of trained neural networks
 
+[![Open GPU experiments in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yamenetoo/Artificial-Neural-Network-Analysis-Using-Statistical-Approaches/blob/annstat-package/notebooks/annstat_gpu_experiments.ipynb) **GPU experiment suite**
+[![Open quickstart in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yamenetoo/Artificial-Neural-Network-Analysis-Using-Statistical-Approaches/blob/annstat-package/notebooks/annstat_colab.ipynb) **Quickstart, tests and CIFAR-10**
+
 `annstat` turns the two notebooks of
 [Artificial-Neural-Network-Analysis-Using-Statistical-Approaches](https://github.com/yamenetoo/Artificial-Neural-Network-Analysis-Using-Statistical-Approaches)
 (companion code of *Statistical tuning of artificial neural network*, Al-Mohamad, Bevrani & Haydari, arXiv:2409.16426)
